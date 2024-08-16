@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+</head>
+<style>
+    body{
+        font-family: 'Baloo Bhai', cursive;
+        color:white;
+        background: url('https://cdn.pixabay.com/photo/2015/07/02/10/23/training-828741_960_720.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0px;
+        padding: 0px;
+
+    }
+    .left{
+        display: inline-block;
+        /* border:2px solid rgb(61, 216, 105); */
+        position: absolute;
+        top:20px;
+        left:30px;
+    }
+    .left img{
+        width:70px;
+        height:50px;
+        border-radius:100%;
+
+    }
+    .left div{
+        text-align: center;
+    }
+    .mid{
+        display: block;
+        width: 50%;
+        margin : auto;
+        margin-top:20px ;
+        /* border:2px solid rgb(48, 211, 243); */
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration:none;
+        padding: 24px 12px;
+    }
+    .navbar li a:hover{
+        color: grey;
+        text-decoration:underline;
+    }
+    .right{
+        position: absolute;
+        top:20px;
+        right:20px;
+        display: inline-block;
+        /* border:2px solid rgb(255, 0, 0); */
+    }
+    .btn{
+        padding:10px 20px;
+        margin :0px 7px;
+        border-radius: 10px;
+        border: 2px solid grey;
+        font-size: 20px;
+        cursor:pointer;
+        background-color: black;
+        color: white;
+        font-family: 'Baloo Bhai', cursive;
+    }
+    .btn:hover{
+        background-color: rgba(69, 69, 69, 0.994);
+    }
+    .container{
+        border:2px solid rgb(247, 245, 245);
+        margin: 100px 80px;
+        padding: 75px;
+        width:500px;
+        border-radius: 20px;
+    }
+    .form-group input{
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 500px;
+        padding: 1px ;
+        border: 2px solid rgb(43, 226, 205) ;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    .container h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    .container div{
+        font-size: 25px;
+    }
+    .container button{
+        display: block;
+        width: 90%;
+        margin: 20px auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- logo -->
+        <div class="left"> 
+            <img src="https://images.pexels.com/photos/39671/physiotherapy-weight-training-dumbbell-exercise-balls-39671.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+            <div>FITNESS</div>   
+        </div>
+        <!-- nav -->
+        <div class="mid"> 
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- buttons -->
+        <div class="right"> 
+            <button class="btn">Login</button>
+            <button class="btn">Sign Up</button>
+        </div>
+        <div class="container">
+            <h1>Join Now</h1>
+            <form action="noaction.php">
+                <div class="form-group" >Name:
+                    <input type="text" name="" placeholder="Enter your name">
+                </div>
+                <div class="form-group">Age:
+                    <input type="number" age="" placeholder="Enter your age">
+                </div>
+                <div class="form-group">Mobile No:
+                    <input type="number" name="" placeholder="Enter your mobile no">
+                </div>
+                <div class="form-group">Join Date:
+                    <input type="date" name="" placeholder="Enter your join date">
+                </div>
+                <button class="btn">
+                    SUBMIT
+                </button>
+                <button class="btn">
+                    RESET
+                </button>
+            </form>
+        </div>
+    </header>
+</body>
+</html>
